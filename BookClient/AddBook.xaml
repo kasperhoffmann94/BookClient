@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookClient.AddBook">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="TitleEntry" Placeholder="Title goes here" />
+            <Entry x:Name="DescriptionEntry" Placeholder="Description goes here" />
+            <Entry x:Name="ISBNEntry" Placeholder="ISBN goes here" />
+            <Button Text="Add Book" Clicked="AddBookButtonClicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

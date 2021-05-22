@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookClient.BookDetailPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition  Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Text="Title: "  Grid.Column="0" Grid.Row="0"/>
+                <Label Text="Description: " Grid.Column="0" Grid.Row="1"/>
+                <Label Text="ISBN: " Grid.Column="0" Grid.Row="2"/>
+                <Entry x:Name ="TitleLabel" Grid.Column="1" Grid.Row="0"/>
+                <Entry x:Name ="DescriptionLabel" Grid.Column="1" Grid.Row="1"/>
+                <Entry x:Name ="ISBNLabel" Grid.Column="1" Grid.Row="2"/>
+            </Grid>
+            <Button Text="Delete Book" Clicked="DeleteBookButtonClicked"></Button>
+            <Button Text="Update Book" Clicked="UpdateBookButtonClicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
